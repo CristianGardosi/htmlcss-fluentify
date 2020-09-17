@@ -53,6 +53,7 @@ body{
 /* Button */
 .button{
   display: inline-block;
+  color: white;
   min-width: 100px;
   line-height: 20px;
   text-align: center;
@@ -74,8 +75,8 @@ body{
 /* Tipography */
 h1{
   font-weight: 700;
-  font-size: 16px;
-  color: #808080;
+  font-size: 50px;
+  color: white;
 }
 
 h2,
@@ -97,15 +98,16 @@ h2{
 .full-header-container{
   background: #0c325a;
   height: 560px;
-  background-image: url('../img/');
+  background-image: url('../img/background-header.png');
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 60%;
   background-position: bottom right;
 }
 
 .topnav{
   color: white;
   line-height: 80px;
+  height: 80px;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -137,6 +139,28 @@ h2{
   width: 40%;
   text-align: right;
 }
+
+.topnav-right li a:hover{
+  color: #8d8d8d;
+}
+/* jumbotron */
+.jumbotron{
+  position: relative;
+  height: 480px;
+}
+
+.jumbotron-text{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.jumbotron-text h1{
+  margin-bottom: 30px;
+}
+
 
 /* MAIN */
 
