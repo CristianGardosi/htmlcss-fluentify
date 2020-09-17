@@ -9,7 +9,6 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
-
 /* UTILITIES */
 .container{
   margin: auto;
@@ -21,13 +20,13 @@ body{
 }
 
 .w33{
+  float: left;
   width: calc(100% / 3);
   padding: 0 20px;
-  float: left;
 }
 
 .clearfix::after{
-  content:('');
+  content: '';
   display: table;
   clear: both;
 }
@@ -103,6 +102,10 @@ p{
   color: grey;
 }
 
+main p{
+  line-height: 30px;
+}
+
 .textcenter{
   text-align: center;
 }
@@ -121,7 +124,6 @@ p{
 .topnav{
   color: white;
   line-height: 80px;
-  height: 80px;
   font-size: 13px;
   text-transform: uppercase;
 }
@@ -186,6 +188,30 @@ p{
 .efficency p{
   font-size: 18px;
 }
+/* Info */
+.info{
+  margin: 50px;
+}
+
+.w33 img{
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.w33 h3{
+  font-size: 25px;
+  color: #64de82
+}
+
+.w33 h3::after{
+  content: '';
+  display: block;
+  margin: 20px auto;
+  width: 50px;
+  height: 1px;
+  background: grey;
+}
+
 
 /* <!-- Efficency (1/3 main) --> */
 
