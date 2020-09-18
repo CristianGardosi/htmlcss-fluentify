@@ -15,12 +15,13 @@ body{
   width: 1200px;
 }
 
-.container2{
+.containersmall{
   margin: auto;
   width: 1000px;
 }
 
 .w50{
+  float: left;
   width: 50%;
 }
 
@@ -29,7 +30,7 @@ body{
   width: calc(100% / 3);
   padding: 0 20px;
 }
-
+/* Float utilities */
 .clearfix::after{
   content: '';
   display: table;
@@ -72,22 +73,23 @@ body{
   padding: 10px;
 }
 
-.button:hover{
-  color: #64de82;
-}
-
 .button-green{
   background-color: #64de82;
   border: none;
+}
+
+.button-large{
+  padding: 20px;
+}
+
+.button:hover{
+  color: #64de82;
 }
 
 .button-green:hover{
   color: black;
 }
 
-.button-large{
-  padding: 20px;
-}
 
 /* Tipography */
 h1{
@@ -137,7 +139,6 @@ main p{
   text-transform: uppercase;
 }
 
-
 .topnav li a{
   text-decoration: none;
   color: white;
@@ -146,7 +147,7 @@ main p{
 .topnav li a:not(.button):hover{
   color: #64de82;
 }
-/* Top nav left */
+/* Top nav left (logo) */
 .topnav-logo img{
   vertical-align: middle;
   width: 60%;
@@ -196,7 +197,7 @@ main p{
 }
 /* Info section (2/3 main) */
 .info{
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .w33 img{
@@ -252,14 +253,14 @@ main p{
   position: relative;
   height: 150px;
 }
-
+/* Left footer elements */
 .left-foot-elements{
   position: absolute;
   top:50%;
   left:0;
   transform: translateY(-50%);
 }
-
+/* Right footer elements */
 .right-foot-elements{
   position: absolute;
   top:50%;
@@ -271,14 +272,19 @@ main p{
   color: grey;
 }
 
-/* .right-foot-elements:after{
-  content: '';
-  display: block;
-  margin-left: 65px;
-  width:120px;
-  height: 1px;
-  background: grey;
-} */
+.right-foot-elements span i{
+  padding-left: 40px;
+}
+
+.footer-select{
+  display: inline-block;
+}
+
+.footer-select {
+	padding: 5px 0;
+	margin: 0 20px;
+	border-bottom: 1px solid grey;
+}
 
 /* Help button */
 .help-button{
