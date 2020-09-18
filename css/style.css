@@ -15,6 +15,11 @@ body{
   width: 1200px;
 }
 
+.container2{
+  margin: auto;
+  width: 1000px;
+}
+
 .w50{
   width: 50%;
 }
@@ -33,6 +38,10 @@ body{
 
 .floatleft{
   float: left;
+}
+
+.floatright{
+  float: right;
 }
 
 /* menu inline */
@@ -63,6 +72,10 @@ body{
   padding: 10px;
 }
 
+.button:hover{
+  color: #64de82;
+}
+
 .button-green{
   background-color: #64de82;
   border: none;
@@ -74,10 +87,6 @@ body{
 
 .button-large{
   padding: 20px;
-}
-
-.button:hover{
-  color: black;
 }
 
 /* Tipography */
@@ -93,7 +102,7 @@ h3{
 }
 
 h2{
-  font-size: 30px;
+  font-size: 25px;
   color: black;
   margin-bottom: 10px;
 }
@@ -120,7 +129,7 @@ main p{
   background-size: 60%;
   background-position: bottom right;
 }
-
+/* Top navigation */
 .topnav{
   color: white;
   line-height: 80px;
@@ -134,6 +143,10 @@ main p{
   color: white;
 }
 
+.topnav li a:not(.button):hover{
+  color: #64de82;
+}
+/* Top nav left */
 .topnav-logo img{
   vertical-align: middle;
   width: 60%;
@@ -142,23 +155,16 @@ main p{
 .topnav .topnav-logo{
   width: 15%;
 }
-
+/* Top nav center */
 .topnav .topnav-center{
   width: 45%;
 }
-
-.topnav-center li a:hover{
-  color: #64de82;
-}
-
+/* Top nav right */
 .topnav .topnav-right{
   width: 40%;
   text-align: right;
 }
 
-.topnav-right li a:hover{
-  color: #64de82;
-}
 /* jumbotron */
 .jumbotron{
   position: relative;
@@ -179,7 +185,7 @@ main p{
 
 /* MAIN */
 
-/* Efficency */
+/* Efficency section (1/3) main */
 .efficency{
   padding: 35px;
   background-color: #d3d3d3;
@@ -188,7 +194,7 @@ main p{
 .efficency p{
   font-size: 18px;
 }
-/* Info */
+/* Info section (2/3 main) */
 .info{
   margin: 50px;
 }
@@ -212,9 +218,79 @@ main p{
   background: grey;
 }
 
-
-/* <!-- Efficency (1/3 main) --> */
-
-/* <!-- Info section (2/3 main) --> */
-
+.info::after{
+  content: '';
+  display: block;
+  margin: 40px auto;
+  width: 90vw;
+  height: 1px;
+  background: grey;
+}
   /* <!-- Plan section (3/3 main) --> */
+.plan{
+  margin-bottom: 30px;
+}
+
+.plan-left img{
+  width: 80%;
+}
+
+.plan-right h2{
+  font-size: 40px;
+}
+
+.link-placement{
+  margin-top: 25px;
+}
+
+/* FOOOTER */
+.footer-container{
+  background-color: #d3d3d3;
+}
+
+.footer-elements{
+  position: relative;
+  height: 150px;
+}
+
+.left-foot-elements{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translateY(-50%);
+}
+
+.right-foot-elements{
+  position: absolute;
+  top:50%;
+  right:0;
+  transform: translateY(-50%);
+}
+.right-foot-elements span{
+  padding-right: 30px;
+  color: grey;
+}
+
+/* .right-foot-elements:after{
+  content: '';
+  display: block;
+  margin-left: 65px;
+  width:120px;
+  height: 1px;
+  background: grey;
+} */
+
+/* Help button */
+.help-button{
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+}
+
+.help-button a{
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: #64de82;
+}
